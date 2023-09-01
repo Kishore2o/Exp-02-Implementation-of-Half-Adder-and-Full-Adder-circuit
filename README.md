@@ -77,3 +77,4 @@ endmodule
 ![image](https://github.com/Kishore2o/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118679883/7c426fa7-d429-4cce-a85a-55da88998185)
 
 ### Result:
+Thus the Implementation of Half Adder and Full Adder circuit are studied and the truth table for different logic gates are verified.
