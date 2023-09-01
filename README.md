@@ -1,4 +1,4 @@
-# Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
+# Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit
 
 # Implementation-of-Half-Adder-and-Full-Adder-circuit
 ### AIM:
@@ -35,20 +35,45 @@ Connect the supply (+5V) to the circuit
 Switch ON the main switch
 If the output is 1, then the led glows.
 ### 
+```
 Program:
-/*
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
-Logic symbol & Truthtable
-RTL realization
+Developed by: S.Kishore
+RegisterNumber:  212222240050
 
+## HALF ADDER :
+module exp3(A,B,c,s);
+input A,B;
+output s,c;
+assign s=A^B;
+assign c=A&B;
+endmodule
+
+## FULL ADDER
+module exp03(A,B,c,sum,carry);
+input A,B,c;
+output sum,carry;
+assign sum=A^B^c;
+assign carry=((A&B)|(B&c)|(c&A));
+endmodule
+```
 ### Output:
-### RTL
-### TIMING DIAGRAM
+### HALF ADDER RTL :
+![image](https://github.com/Kishore2o/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118679883/11145bd9-2743-42c8-b8a7-f40f9ecd4a41)
 
+### HALF ADDER WAVEFORM :
+![image](https://github.com/Kishore2o/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118679883/6deaa73d-8b74-43a3-99b9-01526f135fc6)
 
-### TRUTH TABLE 
+### HALF ADDER TRUTH TABLE :
+![image](https://github.com/Kishore2o/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118679883/8a46f8ec-1bee-4e7d-86eb-5e19cab512a7)
+
+### FULL ADDER RTL :
+![image](https://github.com/Kishore2o/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118679883/005d7860-5e39-4115-adc0-231802900c54)
+
+### FULL ADDER WAVEFORM :
+![image](https://github.com/Kishore2o/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118679883/a17a9c11-dd5c-49f7-98a6-a02230f6cd89)
+
+### FULL ADDER TRUTH TABLE :
+![image](https://github.com/Kishore2o/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118679883/7c426fa7-d429-4cce-a85a-55da88998185)
 
 ### Result:
